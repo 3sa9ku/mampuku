@@ -1,0 +1,11 @@
+.members {
+    background-color: #f8f8f8;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.members h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
