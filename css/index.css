@@ -9,10 +9,6 @@ nav.floating {
 
 .first-view {
     height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     display: flex;
     align-items: center;
 }
@@ -67,7 +63,6 @@ body {
     font-size: 16pt;
     color: #000000;
     line-height: 1;
-    background-color: #ffffff;
 }
 
 img {
@@ -167,7 +162,7 @@ img {
     }
 
     .main {
-        padding-top: 50px;;
+        padding-top: 50px;
     }
 
     .footer-logo {
@@ -192,6 +187,7 @@ img {
         outline: none;
     }
 }
+
 .footer {
     color: #ffffff;
     background-color: #24211b;
@@ -242,4 +238,22 @@ img {
     font-size: 14pt;
     font-weight: bold;
     margin-top: 90px;
+}
+
+/* ↓↓↓ 以下を最後に追加 ↓↓↓ */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("images/common/back.png") repeat;
+    background-size: auto;
+}
+
+.main,
+.header,
+.footer,
+.first-view {
+    background-color: transparent !important;
+    background: none !important;
 }
