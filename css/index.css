@@ -190,13 +190,14 @@ img {
 
 .footer {
     color: #ffffff;
-    background-color: #24211b;
+    background-color: transparent;
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 .footer .site-menu ul li a {
     font-family: 'Zen Old Mincho', 'Noto Serif JP', serif;
