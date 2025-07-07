@@ -105,7 +105,17 @@ img {
 }
 
 .site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 18pt;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.site-menu ul li a:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 800px) {
@@ -190,6 +200,36 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer .site-menu ul li a {
+    font-family: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: 0.15em;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer .site-menu ul li a:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+}
+
+.footer .site-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffffff, #f0f0f0);
+    transition: width 0.3s ease;
+}
+
+.footer .site-menu ul li a:hover::after {
+    width: 100%;
 }
 
 .footer-logo {
