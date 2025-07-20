@@ -68,6 +68,9 @@ nav.floating:hover {
     margin-bottom: 20px;
     position: relative;
     letter-spacing: 0.05em;
+    max-width: 1000px;
+    min-width: 600px;
+    white-space: nowrap;
 }
 
 .hero-title::after {
@@ -616,5 +619,21 @@ html, body {
     width: 100%;
     height: 160px;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-title {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 40px;
+    white-space: normal;
+  }
+}
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 28px;
+    max-width: 100%;
+    white-space: normal;
   }
 }
