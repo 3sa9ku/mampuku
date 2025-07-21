@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問合せ・口コミ</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="index.html">
+        <img src="images/common/ramenlogo.png" alt="ロゴ">
+      </a>
+    </div>
+  </header>
+  <main class="main" style="max-width:700px;margin:40px auto;">
+    <h1>お問合せ・口コミ</h1>
+    <section style="margin-bottom:50px;">
+      <h2>お問合せフォーム</h2>
+      <form>
+        <div style="margin-bottom:20px;">
+          <label for="name">お名前：</label><br>
+          <input type="text" id="name" name="name" style="width:100%;padding:8px;">
+        </div>
+        <div style="margin-bottom:20px;">
+          <label for="email">メールアドレス：</label><br>
+          <input type="email" id="email" name="email" style="width:100%;padding:8px;">
+        </div>
+        <div style="margin-bottom:20px;">
+          <label for="message">お問合せ内容：</label><br>
+          <textarea id="message" name="message" rows="6" style="width:100%;padding:8px;"></textarea>
+        </div>
+        <button type="submit" style="padding:10px 30px;">送信</button>
+      </form>
+    </section>
+    <section>
+      <h2>口コミ投稿フォーム</h2>
+      <form style="margin-bottom:40px;">
+        <div style="margin-bottom:20px;">
+          <label for="reviewer">お名前：</label><br>
+          <input type="text" id="reviewer" name="reviewer" style="width:100%;padding:8px;">
+        </div>
+        <div style="margin-bottom:20px;">
+          <label for="rating">評価：</label><br>
+          <select id="rating" name="rating" style="width:100%;padding:8px;">
+            <option value="5">★★★★★ 5</option>
+            <option value="4">★★★★☆ 4</option>
+            <option value="3">★★★☆☆ 3</option>
+            <option value="2">★★☆☆☆ 2</option>
+            <option value="1">★☆☆☆☆ 1</option>
+          </select>
+        </div>
+        <div style="margin-bottom:20px;">
+          <label for="comment">コメント：</label><br>
+          <textarea id="comment" name="comment" rows="5" style="width:100%;padding:8px;"></textarea>
+        </div>
+        <button type="submit" style="padding:10px 30px;">投稿</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html> 
