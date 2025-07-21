@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
     color: #ffffff;
     text-shadow: 1px 1px 10px #4b2c14;
 }
@@ -22,6 +21,18 @@
 .title p {
     font-size: 14pt;
     margin-top: 15px;
+}
+
+.title-text-bg {
+    display: inline-block;
+    padding: 0.2em 1em;
+    background: url(images/common/gaikan.jpeg) center center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 8px #333, 0 0 2px #000;
 }
 
 .feature {
@@ -122,4 +133,62 @@
 
 .footer {
     margin-top: 100px;
+}
+
+.feature.menu-bg {
+    position: relative;
+    background: url('../images/common/gaikan.jpeg') center center/cover no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.feature.menu-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.7);
+    z-index: 1;
+}
+.feature.menu-bg > .feature-text,
+.feature.menu-bg > .feature-image {
+    position: relative;
+    z-index: 2;
+}
+
+.title h1, .title p {
+    color: #222;
+    text-shadow: none;
+}
+
+@media (max-width: 800px) {
+  .feature {
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    align-items: stretch;
+  }
+  .feature-text, .reverse .feature-text {
+    margin: 0 0 20px 0 !important;
+    max-width: 100%;
+  }
+  .feature-image, .reverse .feature-image {
+    margin: 0 !important;
+    justify-content: flex-start;
+  }
+  .movie {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+  .movie iframe {
+    height: 250px;
+  }
+  .feature.menu-bg {
+    border-radius: 0;
+    background-position: center top;
+  }
+  .title-text-bg {
+    font-size: 20px;
+    padding: 0.2em 0.5em;
+  }
 }
